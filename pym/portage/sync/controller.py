@@ -94,12 +94,12 @@ class SyncManager(object):
 		self.module_controller = portage.sync.module_controller
 		self.module_names = self.module_controller.module_names
 		self.hooks = {}
-		for _dir in ["repo.postsync.d", "postsync.d"]:
-			postsync_dir = os.path.join(self.settings["PORTAGE_CONFIGROOT"],
+		for _dir in ["repo.postsync.d", "postsync.d", "repo.presync.d", "presync.d"]:
+			sync_dir = os.path.join(self.settings["PORTAGE_CONFIGROOT"],
 				portage.USER_CONFIG_PATH, _dir)
 			hooks = OrderedDict()
-			for filepath in util._recursive_file_list(postsync_dir):
-				name = filepath.split(postsync_dir)[1].lstrip(os.sep)
+			for filepath in util._recursive_file_list(sync_dir):
+				name = filepath.split(sync_dir)[1].lstrip(os.sep)
 				if os.access(filepath, os.X_OK):
 					hooks[filepath] = name
 				else:
@@ -107,6 +107,8 @@ class SyncManager(object):
 						% (warn("*"), _dir, _unicode_decode(name),),
 						level=logging.WARN, noiselevel=2)
 			self.hooks[_dir] = hooks
+
+                
 
 	def __getattr__(self, name):
 		if name == 'async':
@@ -198,6 +200,31 @@ class SyncManager(object):
 			_hooks = self.hooks["postsync.d"]
 		for filepath in _hooks:
 			writemsg_level("Spawning post_sync hook: %s\n"
+				% (_unicode_decode(_hooks[filepath])),
+				level=logging.ERROR, noiselevel=4)
+			if reponame:
+				retval = portage.process.spawn(
+					[filepath, reponame, dosyncuri, repolocation],
+					env=self.settings.environ())
+			else:
+				retval = portage.process.spawn([filepath],
+					env=self.settings.environ())
+			if retval != os.EX_OK:
+				writemsg_level(" %s Spawn failed for: %s, %s\n" % (bad("*"),
+					_unicode_decode(_hooks[filepath]), filepath),
+					level=logging.ERROR, noiselevel=-1)
+				succeeded = retval
+		return succeeded
+
+
+	def perform_pre_sync_hook(self, reponame, dosyncuri='', repolocation=''):
+		succeeded = os.EX_OK
+		if reponame:
+			_hooks = self.hooks["repo.presync.d"]
+		else:
+			_hooks = self.hooks["presync.d"]
+		for filepath in _hooks:
+			writemsg_level("Spawning pre_sync hook: %s\n"
 				% (_unicode_decode(_hooks[filepath])),
 				level=logging.ERROR, noiselevel=4)
 			if reponame:

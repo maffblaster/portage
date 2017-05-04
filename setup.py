@@ -674,6 +674,7 @@ setup(
 		['$docdir', ['NEWS', 'RELEASE-NOTES']],
 		['$portage_base/bin', ['bin/deprecated-path']],
 		['$sysconfdir/portage/repo.postsync.d', ['cnf/repo.postsync.d/example']],
+                ['$sysconfdir/portage/repo.presync.d', ['cnf/repo.presync.d/example']],
 	],
 
 	ext_modules = [Extension(name=n, sources=m) for n, m in x_c_helpers.items()],

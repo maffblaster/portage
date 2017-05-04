@@ -1,0 +1,50 @@
+#!/bin/sh
+# Example /etc/portage/repo.presync.d script. Make it executable 
+# (chmod +x) for Portage to process it.
+#
+# repo.presync.d hooks will be called multiple times before syncing
+# each repository. These can be used in QA or to perform certain
+# actions before syncing the repositories.
+#
+# On a repo.presync.d hook call, positional parameters contain
+# information about the about-to-sync repository.
+
+# The hook can control its actions depending on any of the three
+# parameters passed to it.
+#
+# Passed parameter are as follows:
+#
+# The repository name:
+repository_name=${1}
+# The URI to which the repository will be synced:
+sync_uri=${2}
+# The path to the repository:
+repository_path=${3}
+
+# Portage assumes that a hook has succeeded if it exits with 0 code. If no
+# explicit exit is done, the exit code is the exit code of last spawned
+# command. Since this example script is a bit more complex, the exit code
+# should be controlled explicitly.
+
+# The 'ret' variable holds the script's return value:
+ret=0
+
+if [ -n "${repository_name}" ]; then
+	# Repository name was provided, the system is now running 
+	# the pre-repository hook.
+	echo "* In pre-repository hook for ${repository_name}"
+	echo "** will sync from remote repository ${sync_uri}"
+	echo "** will sync into ${repository_path}"
+
+	# This example creates a snapshot of the previous sync before the next sync: 
+	if [ "${repository_name}" == "gentoo" ]; then
+		if ! /sbin/btrfs subvolume snapshot "${3}" "/usr/${3}-$(date +%Y-%m-%d-%T)"
+		then
+			echo "!!! btrfs snapshot failed for ${3}!"
+			ret=1
+		fi
+	fi
+fi
+
+# Return explicit status:
+exit "${ret}"

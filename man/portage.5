@@ -63,7 +63,9 @@ package.properties
 package.unmask
 package.use
 postsync.d
+presync.d
 repo.postsync.d
+repo.presync.d
 repos.conf
 sets.conf
 .fi
@@ -846,8 +848,28 @@ repositories have been synced.  Each script is called in alphabetic order
 without any arguments.
 .fi
 .TP
+.BR presync.d/
+This directory is for user supplied presync hooks to be run once before all
+repositories have been synced.  Each script is called in alphabetic order
+without any arguments.
+.fi
+.TP
 .BR repo.postsync.d/
 This directory is for user supplied postsync hooks to be run once after each
+repository has been synced.  Each script is called in alphabetic order
+with three arguments.
+
+.I args:
+        repository name, sync-uri, location
+.fi
+
+Using this information it is possible for hooks to be run for only a certain
+repository.  This way other update actions can be performed for that repository
+only.
+.fi
+.TP
+.BR repo.presync.d/
+This directory is for user supplied presync hooks to be run once before each
 repository has been synced.  Each script is called in alphabetic order
 with three arguments.
 
@@ -985,9 +1007,9 @@ Extra options to give to git when cloning repository (git clone).
 Extra options to give to git when updating repository (git pull).
 .TP
 .B sync\-hooks\-only\-on\-change
-If set to true, then sync of a given repository will not trigger postsync
-hooks unless hooks would have executed for a master repository or the
-repository has changed since the previous sync operation.
+If set to true, then sync of a given repository will not trigger post 
+or presync hooks unless hooks would have executed for a master repository
+or the repository has changed since the previous sync operation.
 .TP
 .B sync\-type
 Specifies type of synchronization performed by `emerge \-\-sync`.
