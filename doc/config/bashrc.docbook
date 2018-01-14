@@ -9,10 +9,10 @@
 		
 		<orderedlist>
 			<listitem><para><filename>/etc/portage/bashrc</filename></para></listitem>
-			<listitem><para><filename>/etc/portage/env/${CATEGORY}/${PN}</filename></para></listitem>
-			<listitem><para><filename>/etc/portage/env/${CATEGORY}/${PN}:${SLOT}</filename></para></listitem>
-			<listitem><para><filename>/etc/portage/env/${CATEGORY}/${P}</filename></para></listitem>
-			<listitem><para><filename>/etc/portage/env/${CATEGORY}/${PF}</filename></para></listitem>
+			<listitem><para><filename>/etc/portage/env/${CATEGORY}/${PN}/bashrc</filename></para></listitem>
+			<listitem><para><filename>/etc/portage/env/${CATEGORY}/${PN}:${SLOT}/bashrc</filename></para></listitem>
+			<listitem><para><filename>/etc/portage/env/${CATEGORY}/${P}/bashrc</filename></para></listitem>
+			<listitem><para><filename>/etc/portage/env/${CATEGORY}/${PF}/bashrc</filename></para></listitem>
 		</orderedlist>
 	</sect1>
 	<sect1 id='config-bashrc-ebuild-phase-hooks'>
