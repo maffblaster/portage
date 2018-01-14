@@ -1,7 +1,7 @@
 <chapter id='dependency-resolution-task-scheduling'>
-<title>Task Scheduling</title>
+<title>Task scheduling</title>
 <sect1 id='dependency-resolution-task-scheduling-dependencies'>
-	<title>Task Dependencies</title>
+	<title>Task dependencies</title>
 	<para>
 	All tasks are executed in an order such
 	that a task's dependencies are satisfied
@@ -10,7 +10,7 @@
 	</para>
 </sect1>
 <sect1 id='dependency-resolution-task-scheduling-conflict-avoidance'>
-	<title>Conflict Avoidance</title>
+	<title>Conflict avoidance</title>
 	<para>
 	Sometimes a package installation order exists such that it is
 	possible to avoid having two conflicting packages installed
@@ -58,7 +58,7 @@
 	</para>
 </sect1>
 <sect1 id='dependency-resolution-task-scheduling-circular-dependencies'>
-	<title>Circular Dependencies</title>
+	<title>Circular dependencies</title>
 	<para>
 	TODO: Automatically solve circular dependencies by temporarily disabling
 	conditional dependencies and then rebuilding packages with the conditional
@@ -66,7 +66,7 @@
 	</para>
 </sect1>
 <sect1 id='dependency-resolution-task-scheduling-parallel'>
-	<title>Parallel Scheduling</title>
+	<title>Parallel scheduling</title>
 	<para>
 	The algorithm used to choose packages that will execute concurrently
 	with other packages is as conservative as possible in the sense that

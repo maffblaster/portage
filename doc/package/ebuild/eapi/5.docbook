@@ -73,7 +73,7 @@ the regular slot).
 <section id='package-ebuild-eapi-5-profile'>
 <title>Profiles</title>
 <section id='package-ebuild-eapi-5-profile-iuse-injection'>
-<title>Profile IUSE Injection</title>
+<title>Profile IUSE injection</title>
 <para>
 IUSE_EFFECTIVE is a variable calculated from IUSE and
 a variety of other sources described below. It is purely
@@ -108,7 +108,7 @@ equivalent of ${v}.
 </itemizedlist>
 </para>
 <para>
-<table><title>Example Variable Settings</title>
+<table><title>Example variable settings</title>
 <tgroup cols='2' align='left' >
 <colspec colname='source'/>
 <colspec colname='destination'/>
@@ -219,7 +219,7 @@ pass the -j1 option to emake.
 </section>
 </section>
 <section id='package-ebuild-eapi-5-ebuild-environment-variables'>
-<title>Ebuild Environment Variables</title>
+<title>Ebuild environment variables</title>
 <section id='package-ebuild-eapi-5-ebuild-environment-variables-ebuild-phase-func'>
 <title>New EBUILD_PHASE_FUNC variable</title>
 <para>

@@ -3,7 +3,7 @@
 <section id='package-ebuild-eapi-4-slot-abi-metadata'>
 <title>Metadata</title>
 <section id='package-ebuild-eapi-4-slot-abi-metadata-slot-sub-slot-abi'>
-<title>SLOT Supports Optional "sub-slot" ABI part</title>
+<title>SLOT supports optional "sub-slot" ABI part</title>
 <para>
 In order to represent cases in which an upgrade to a new version of a package
 requires reverse dependencies to be rebuilt, the SLOT variable may contain an
@@ -28,7 +28,7 @@ Refer to the
 </para>
 </section>
 <section id='package-ebuild-eapi-4-slot-abi-metadata-dependency-atom-slot-abi-equal-operator'>
-<title>Dependency Atom slot/sub-slot := Operator</title>
+<title>Dependency atom slot/sub-slot := operator</title>
 <para>
 Dependency atom syntax now supports slot/sub-slot := operators which allow the
 specific slot/sub-slot that a package is built against to be recorded, so that it's
@@ -56,7 +56,7 @@ installed at build time.
 </para>
 </section>
 <section id='package-ebuild-eapi-4-slot-abi-metadata-dependency-atom-slot-abi-asterisk-operator'>
-<title>Dependency Atom slot/sub-slot :* Operator</title>
+<title>Dependency atom slot/sub-slot :* operator</title>
 <para>
 The new :* operator is used to express dependencies that can change versions
 at runtime without requiring reverse dependencies to be rebuilt. For example,

@@ -11,7 +11,7 @@
 	<section id='package-ebuild-eapi-1-phases'>
 		<title>Phases</title>
 		<section id='package-ebuild-eapi-1-phases-default-src-compile'>
-			<title>Default src_compile Phase Function</title>
+			<title>Default src_compile phase function</title>
 			<para>
 			Support for the ECONF_SOURCE variable, which is also supported
 			by econf, has been added to the default src_compile implementation.
@@ -29,12 +29,12 @@ src_compile() {
 		</section>
 	</section>
 	<section id='package-ebuild-eapi-1-slot-deps'>
-	<title>SLOT Dependencies</title>
+	<title>SLOT dependencies</title>
 	<para>
 	Any valid atom can be constrained to match a specific SLOT. This is
 	accomplished by appending a colon to the atom, followed by a SLOT value.
 	</para>
-	<table><title>Slot Dependency Examples</title>
+	<table><title>Slot dependency examples</title>
 	<tgroup cols='1' align='left' >
 	<colspec colname='atom'/>
 	<thead>

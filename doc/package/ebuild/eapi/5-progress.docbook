@@ -60,7 +60,7 @@
 			</para>
 		</section>
 		<section id='package-ebuild-eapi-5-progress-helpers-banned-in-global-scope'>
-			<title>Helpers Banned in Global Scope</title>
+			<title>Helpers banned in global scope</title>
 			<para>
 				<itemizedlist>
 					<listitem><para>diropts</para></listitem>
@@ -81,24 +81,24 @@
 	<section id='package-ebuild-eapi-5-progress-metadata'>
 		<title>Metadata</title>
 		<section id='package-ebuild-eapi-5-progress-metadata-package-names-allow-period-characters'>
-			<title>Support for Period Characters in Package Names</title>
+			<title>Support for period characters in package names</title>
 			<para>
 				The "." character is allowed in package names.
 			</para>
 		</section>
 		<section id='package-ebuild-eapi-5-progress-metadata-use-flags-allow-period-characters'>
-			<title>Support for Period Characters in USE Flags</title>
+			<title>Support for period characters in USE flags</title>
 			<para>
 				The "." character is allowed in USE flags.
 			</para>
 		</section>
 		<section id='package-ebuild-eapi-5-progress-metadata-repository-dependencies'>
-			<title>Repository Dependencies</title>
+			<title>Repository dependencies</title>
 			<para>
 				Repository dependencies are supported in atoms in DEPEND, PDEPEND and RDEPEND and atoms passed to best_version and has_version functions.
 				Repository dependency is specified by two colons followed by repository name.
 			</para>
-			<table><title>Repository Dependency Examples</title>
+			<table><title>Repository dependency examples</title>
 				<tgroup cols='1' align='left'>
 					<colspec colname='atom'/>
 					<thead>
@@ -127,11 +127,11 @@
 			</table>
 		</section>
 		<section id='package-ebuild-eapi-5-progress-metadata-automatic-unpack-dependencies'>
-			<title>Automatic Unpack Dependencies</title>
+			<title>Automatic unpack dependencies</title>
 			<para>
 				Dependencies on packages required to unpack archives specified in SRC_URI are automatically appended to DEPEND. These dependencies are calculated from filename extensions of archives specified in SRC_URI. Dependencies (for ebuilds using given EAPI) corresponding to given filename extensions are configured in ${repository_path}/profiles/unpack_dependencies/${EAPI} files.
 			</para>
-			<table><title>Unpack Dependencies Configuration Examples</title>
+			<table><title>Unpack dependencies configuration examples</title>
 				<tgroup cols='1' align='left'>
 					<tbody>
 						<row>
@@ -166,14 +166,14 @@
 	<section id='package-ebuild-eapi-5-progress-variables'>
 		<title>Variables</title>
 		<section id='package-ebuild-eapi-5-progress-variables-repository'>
-			<title>REPOSITORY Variable</title>
+			<title>REPOSITORY variable</title>
 			<para>
 				The new REPOSITORY variable is set in ebuild environment. This variable contains name of repository, which contains currently used ebuild.
 			</para>
 		</section>
 	</section>
 	<section id='package-ebuild-eapi-5-progress-repo-level-config'>
-		<title>Extended Repository-Level Configuration</title>
+		<title>Extended repository-level configuration</title>
 		<para>
 			Repository-level configuration in ${repository_path}/profiles is supported for the following files:
 			<itemizedlist>
@@ -191,7 +191,7 @@
 		</para>
 	</section>
 	<section id='package-ebuild-eapi-5-progress-directories'>
-		<title>Directories Allowed for Profile-Level and Repository-Level Configuration</title>
+		<title>Directories allowed for profile-level and repository-level configuration</title>
 		<para>
 			The following files can be directories:
 			<itemizedlist>
@@ -209,11 +209,11 @@
 		</para>
 	</section>
 	<section id='package-ebuild-eapi-5-progress-use-aliases'>
-		<title>USE Flag Aliases</title>
+		<title>USE flag aliases</title>
 		<para>
 			USE flag aliases are supported to allow to satisfy dependencies of packages from other repositories, which require differently named USE flags. USE flag aliases are defined in ${repository_path}/profiles/use.aliases and ${repository_path}/profiles/package.use.aliases files.
 		</para>
-		<table><title>use.aliases Example</title>
+		<table><title>use.aliases example</title>
 			<tgroup cols='1' align='left'>
 				<tbody>
 					<row>
@@ -225,7 +225,7 @@
 				</tbody>
 			</tgroup>
 		</table>
-		<table><title>package.use.aliases Example</title>
+		<table><title>package.use.aliases example</title>
 			<tgroup cols='1' align='left'>
 				<tbody>
 					<row>

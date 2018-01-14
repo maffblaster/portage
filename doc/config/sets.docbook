@@ -1,5 +1,5 @@
 <chapter id='config-set'>
-	<title>Package Set Configuration</title>
+	<title>Package set configuration</title>
 	<sect1 id='config-set-locations'>
 		<title>sets.conf locations</title>
 		<para>
@@ -26,7 +26,7 @@
 	</sect1>
 	
 	<sect1 id='config-set-syntax'>
-		<title>sets.conf Syntax</title>
+		<title>sets.conf syntax</title>
 		<para>
 		Unlike other Portage configuration files <filename>sets.conf</filename> 
 		uses Pythons <classname>ConfigParser</classname> module, which implements
@@ -41,7 +41,7 @@
 		in different ways, and will be explained in detail in the following sections.
 		</para>
 		<sect2 id='config-set-syntax-single'>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			The configuration of a single set can be very simple as in most cases
 			it only requires a single option <varname>class</varname> to be 
@@ -84,7 +84,7 @@
 		</sect2>
 	
 		<sect2 id='config-set-syntax-multi'>
-			<title>Multi Set Configuration</title>
+			<title>Multi set configuration</title>
 			<para>
 			As configuring each single set manually could be quite annoying if 
 			you want many sets with the same options Portage also allows to
@@ -131,7 +131,7 @@
 	</sect1>
 
 	<sect1 id='config-set-classes'>
-		<title>Available Set Handler Classes</title>
+		<title>Available set handler classes</title>
 		<para>
 		The following sections contain the available handler classes that can be
 		used for the <varname>class</varname> option in 
@@ -164,7 +164,7 @@
 		</para>
 		
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			In a single set configuration this class supports the following options:
 			</para>
@@ -180,7 +180,7 @@
 			</sect3>
 
 			<sect3>
-			<title>Multi Set Configuration</title>
+			<title>Multi set configuration</title>
 			<para>
 			In a multi set configuration this class supports the following options:
 			</para>
@@ -212,7 +212,7 @@
 		</para>
 		
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			In a single set configuration this class supports the following options:
 			</para>
@@ -224,7 +224,7 @@
 			</sect3>
 			
 			<sect3>
-			<title>Multi Set Configuration</title>
+			<title>Multi set configuration</title>
 			<para>
 			In a multi set configuration this class supports the following options:
 			</para>
@@ -256,7 +256,7 @@
 		</para>
 		
 			<sect3>
-			<title>Single Set Configuraton</title>
+			<title>Single set configuraton</title>
 			<para>
 			This class doesn't support any extra options.
 			</para>
@@ -272,7 +272,7 @@
 		</para>
 		
 			<sect3>
-			<title>Single Set Configuraton</title>
+			<title>Single set configuraton</title>
 			<para>
 			This class doesn't support any extra options.
 			</para>
@@ -290,7 +290,7 @@
 		</para>
 		
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			This class doesn't support any extra options.
 			</para>
@@ -306,7 +306,7 @@
 		confgured by default and doesn't support any options.
 		</para>
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			This class doesn't support any extra options.
 			</para>
@@ -324,7 +324,7 @@
 		</para>
 
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			In single set configurations this class supports the following options:
 			</para>
@@ -350,7 +350,7 @@
 		</para>
 
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			In single set configurations this class supports the following options:
 			<itemizedlist>
@@ -372,7 +372,7 @@
 		</para>
 
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			In single set configurations this class supports the following options:
 			</para>
@@ -393,7 +393,7 @@
 		</para>
 
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			In single set configurations this class supports the following options:
 			</para>
@@ -414,7 +414,7 @@
 		</para>
 
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			In single set configurations this class supports the following options:
 			</para>
@@ -436,7 +436,7 @@
 		</para>
 			
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			In single set configurations this class supports the following options:
 			</para>
@@ -461,7 +461,7 @@
 		</para>
 
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			In single set configurations this class supports the following options:
 			</para>
@@ -486,7 +486,7 @@
 			</sect3>
 			
 			<sect3>
-			<title>Multi Set Configuration</title>
+			<title>Multi set configuration</title>
 			<para>
 			In multi set configurations this class supports the following options:
 			</para>
@@ -517,7 +517,7 @@
 		</para>
 
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			This class doesn't support any extra options.
 			</para>
@@ -591,7 +591,7 @@
 		</para>
 
 			<sect3>
-			<title>Single Set Configuration</title>
+			<title>Single set configuration</title>
 			<para>
 			This class supports the following option:
 			</para>
@@ -605,7 +605,7 @@
 	</sect1>
 	
 	<sect1 id='config-set-defaults'>
-	<title>Default Sets</title>
+	<title>Default sets</title>
 	<para>
 	By default, Portage already creates a few default sets that can be used 
 	without further configuration. See <xref linkend='config-set-locations'/>

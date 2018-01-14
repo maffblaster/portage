@@ -1,7 +1,7 @@
 <part id='qa'>
-<title>Quality Assurance</title>
+<title>Quality assurance</title>
 <chapter id='qa-notices'>
- <title>QA Notices</title>
+ <title>QA notices</title>
  <para>
   Here we'll go over each QA notice and what you (as a developer) can do to fix
   the issue.  If you're a user, you should of course go 
@@ -51,7 +51,7 @@
  </sect1>
 
  <sect1 id='qa-scanelf-textrel'>
-  <title>Scanelf: Runtime Text Relocations (TEXTRELS)</title>
+  <title>Scanelf: Runtime text relocations (TEXTRELS)</title>
   <para>
    <programlisting>
     QA Notice: The following files contain runtime text relocations
@@ -63,7 +63,7 @@
  </sect1>
 
  <sect1 id='qa-scanelf-execstack'>
-  <title>Scanelf: Executable Stack (EXECSTACK)</title>
+  <title>Scanelf: Executable stack (EXECSTACK)</title>
   <para>
    <programlisting>
     QA Notice: The following files contain executable stacks
@@ -75,7 +75,7 @@
  </sect1>
 
  <sect1 id='qa-scanelf-soname'>
-  <title>Scanelf: Missing Shared Object Name (SONAME)</title>
+  <title>Scanelf: Missing shared object name (SONAME)</title>
   <para>
    <programlisting>
     QA Notice: The following shared libraries lack a SONAME
@@ -107,7 +107,7 @@
  </sect1>
 
  <sect1 id='qa-scanelf-needed'>
-  <title>Scanelf: Missing Needed Entries</title>
+  <title>Scanelf: Missing needed entries</title>
   <para>
    <programlisting>
     QA Notice: The following shared libraries lack NEEDED entries
@@ -128,7 +128,7 @@
  </sect1>
 
  <sect1 id='qa-abs-lib-link'>
-  <title>Absolute Symlink In Library Directory</title>
+  <title>Absolute symlink in library directory</title>
   <para>
    <programlisting>
     QA Notice: Found an absolute symlink in a library directory
@@ -150,7 +150,7 @@
  </sect1>
 
  <sect1 id='qa-missing-ldscript'>
-  <title>Missing Linker Script</title>
+  <title>Missing linker script</title>
   <para>
    <programlisting>
     QA Notice: Missing gen_usr_ldscript
@@ -171,7 +171,7 @@
  </sect1>
 
  <sect1 id='qa-root-cruft'>
-  <title>Excessive Files in /</title>
+  <title>Excessive files in /</title>
   <para>
    <programlisting>
     QA Notice: Excessive files found in the / partition
@@ -186,7 +186,7 @@
  </sect1>
 
  <sect1 id='qa-tempdir-libtool'>
-  <title>Portage Tempdir In Libtool Scripts</title>
+  <title>Portage tempdir in libtool scripts</title>
   <para>
    <programlisting>
     QA Notice: ... appears to contain PORTAGE_TMPDIR paths
@@ -207,7 +207,7 @@
  </sect1>
 
  <sect1 id='qa-build-strict-aliasing'>
-  <title>Build Warning: Strict Aliasing</title>
+  <title>Build warning: Strict aliasing</title>
   <para>
    <programlisting>
     QA Notice: Package has poor programming practices which may compile
@@ -235,7 +235,7 @@
  </sect1>
 
  <sect1 id='qa-build-implicit-decl'>
-  <title>Build Warning: Implicit Declarations</title>
+  <title>Build warning: Implicit declarations</title>
   <para>
    <programlisting>
     QA Notice: Package has poor programming practices which may compile
@@ -265,7 +265,7 @@
  </sect1>
 
  <sect1 id='qa-build-uninitialized'>
-  <title>Build Warning: Used Uninitialized</title>
+  <title>Build warning: Used uninitialized</title>
   <para>
    <programlisting>
     QA Notice: Package has poor programming practices which may compile
@@ -284,7 +284,7 @@
  </sect1>
 
  <sect1 id='qa-build-math-compare'>
-  <title>Build Warning: Invalid X&lt;=Y&lt;=Z Comparisons</title>
+  <title>Build warning: Invalid X&lt;=Y&lt;=Z comparisons</title>
   <para>
    <programlisting>
     QA Notice: Package has poor programming practices which may compile
@@ -311,7 +311,7 @@
  </sect1>
 
  <sect1 id='qa-build-non-null'>
-  <title>Build Warning: Non-Null Required</title>
+  <title>Build warning: Non-null required</title>
   <para>
    <programlisting>
     QA Notice: Package has poor programming practices which may compile
@@ -335,7 +335,7 @@
  </sect1>
 
  <sect1 id='qa-build-pointer-trunc'>
-  <title>Build Warning: Truncating Pointers</title>
+  <title>Build warning: Truncating pointers</title>
   <para>
    <programlisting>
     QA Notice: Package has poor programming practices which may compile

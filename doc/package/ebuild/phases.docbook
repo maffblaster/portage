@@ -1,5 +1,5 @@
 <section id='package-ebuild-phases'>
-	<title>Ebuild Phases</title>
+	<title>Ebuild phases</title>
 	<para>
 	Ebuild execution is divided into a series of phases. In order
 	to implement a phase, an ebuild defines a function to serve as

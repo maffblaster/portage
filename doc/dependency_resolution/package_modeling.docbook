@@ -1,10 +1,10 @@
 <chapter id='dependency-resolution-package-modeling'>
-<title>Package Modeling</title>
+<title>Package modeling</title>
 
 <sect1 id='dependency-resolution-package-modeling-constraint-satisfaction'>
-	<title>Constraint Satisfaction</title>
+	<title>Constraint satisfaction</title>
 	<sect2 id='dedependency-resolution-package-modeling-constraint-satisfaction-constraint-types'>
-	<title>Constraint Types</title>
+	<title>Constraint types</title>
 	<para>
 	Dependency resolution involves satisfaction of
 	many constraints:
@@ -25,7 +25,7 @@
 	</sect2>
 
 	<sect2 id='dependency-resolution-package-modeling-constraint-satisfaction-package-dependencies'>
-	<title>Package Dependencies</title>
+	<title>Package dependencies</title>
 	<para>
 	Common types of package dependencies:
 	</para>
@@ -49,7 +49,7 @@
 <sect1 id='dependency-resolution-package-modeling-conflicts'>
 	<title>Conflicts</title>
 	<sect2 id='dependency-resolution-package-modeling-blocker-conflicts'>
-		<title>Blocker Conflicts</title>
+		<title>Blocker conflicts</title>
 		<para>
 		If one package blocks another package, the two packages
 		conflict such that they cannot be installed simultaneously.
@@ -75,7 +75,7 @@
 		</para>
 	</sect2>
 	<sect2 id='dependency-resolution-package-modeling-slot-conflicts'>
-		<title>Slot Conflicts</title>
+		<title>Slot conflicts</title>
 		<para>
 		If two different packages that occupy the same slot are chosen
 		to satisfy dependencies, a slot conflict occurs. The two packages
@@ -84,7 +84,7 @@
 		</para>
 	</sect2>
 	<sect2 id='dependency-resolution-package-modeling-indirect-conflicts'>
-		<title>Indirect Conflicts</title>
+		<title>Indirect conflicts</title>
 		<para>
 		If the dependencies of two parent packages cannot be installed
 		simultaneously, it creates an indirect conflict between the parent
@@ -95,7 +95,7 @@
 </sect1>
 
 <sect1 id='dependency-resolution-package-modeling-dependency-neglection'>
-	<title>Dependency Neglection</title>
+	<title>Dependency neglection</title>
 	<para>
 	In order to significantly reduce the resources consumed by
 	the modeling process, the dependencies of

@@ -17,7 +17,7 @@ to prevent errors from being fatal.
 </para>
 </section>
 <section id='package-ebuild-eapi-4-helpers-docompress'>
-<title>Controllable Compression</title>
+<title>Controllable compression</title>
 <para>
 In EAPI 4, the package manager may optionally compress
 a subset of the files under the D
@@ -118,7 +118,7 @@ argument is treated as if it weren't provided.
 		</para>
 		</section>
 		<section id='package-ebuild-eapi-4-metadata-dependencies-use-defaults'>
-		<title>USE Dependency Defaults</title>
+		<title>USE dependency defaults</title>
 		<para>
 		In a 3-style use dependency, the flag name may immediately be followed by a
 		default specified by either (+) or (-). The former indicates that, when
@@ -237,7 +237,7 @@ Finally, please note that this new metadata key can be set by eclasses, and the 
 	<section id='package-ebuild-eapi-4-phases'>
 		<title>Phases</title>
 		<section id='package-ebuild-eapi-4-phases-pkg-pretend'>
-			<title>New pkg_pretend Phase Function</title>
+			<title>New pkg_pretend phase function</title>
 			<para>
 			The pkg_pretend function may be used to carry out sanity checks early on in the
 			install process. For example, if an ebuild requires a particular kernel

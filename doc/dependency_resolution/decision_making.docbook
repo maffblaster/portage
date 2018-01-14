@@ -1,7 +1,7 @@
 <chapter id='dependency-resolution-decision-making'>
-<title>Decision Making</title>
+<title>Decision making</title>
 <sect1 id='dependency-resolution-decision-making-dependency-expression-evaluation'>
-	<title>Dependency Expression Evaluation</title>
+	<title>Dependency expression evaluation</title>
 	<para>
 	In terms of boolean logic, a dependency expression can
 	be expressed in disjunctive normal form (DNF), which is
@@ -10,7 +10,7 @@
 	atoms capable of satisfying the dependency expression.
 	</para>
 	<sect2 id='dependency-resolution-decision-making-dependency-expression-evaluation-delayed-disjunction'>
-		<title>Delayed Evaluation of Disjunctive Dependency Choices</title>
+		<title>Delayed evaluation of disjunctive dependency choices</title>
 		<para>
 		Disjunctive dependencies, of which virtuals are a special case,
 		can be satisfied by multiple choices of dependency atoms. These
@@ -24,7 +24,7 @@
 	</sect2>
 </sect1>
 <sect1 id='dependency-resolution-decision-making-look-ahead'>
-	<title>Look-Ahead</title>
+	<title>Look-ahead</title>
 	<para>
 	When there are multiple combinations to choose from,
 	a look-ahead mechanism will choose an optimal combination
@@ -49,7 +49,7 @@
 	It is the dependencies of a virtual package that contribute to it's cost.
 	</para>
 	<sect2 id='dependency-resolution-decision-making-look-ahead-constraint-propagation'>
-		<title>Constraint Propagation</title>
+		<title>Constraint propagation</title>
 		<para>
 		Combinations that include packages from the "installed" or
 		"selected" categories are less costly than those that
@@ -64,7 +64,7 @@
 		</para>
 	</sect2>
 	<sect2 id='dependency-resolution-decision-making-look-ahead-expanded-search-space'>
-		<title>Expanded Search Space</title>
+		<title>Expanded search space</title>
 		<para>
 		When evaluating virtual atoms, an expanded search space is
 		considered which recursively traverses

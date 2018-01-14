@@ -59,7 +59,7 @@ make \
 </section>
 <section id='package-ebuild-eapi-3-prefix-variables'>
 <title>Variables</title>
-<table><title>Installation Prefix Variables</title>
+<table><title>Installation prefix variables</title>
 	<tgroup cols='2' align='left' >
 	<colspec colname='name'/>
 	<colspec colname='description'/>
